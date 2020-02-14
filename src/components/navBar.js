@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-
+import logo from "./../images/JoshuaStewart.png"
 import { Navbar, Nav, Container, Row, Col } from "react-bootstrap"
 
 const CustomNavbar = ({ pageInfo }) => {
@@ -13,6 +13,12 @@ const CustomNavbar = ({ pageInfo }) => {
             <Col>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
+                <Nav
+                  className="mr-auto"
+                  activeKey={pageInfo && pageInfo.pageName}
+                >
+                  <img src={logo} alt="logo" style={{ width: "150px" }}></img>
+                </Nav>
                 <Nav
                   className="ml-auto"
                   activeKey={pageInfo && pageInfo.pageName}

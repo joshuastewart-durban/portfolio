@@ -1,0 +1,16 @@
+.form-control {
+	outline: none;
+	border: none;
+}
+
+.wrap-input {
+    width: 100%;
+    position: relative;
+    border-bottom: 2px solid black;
+    margin-bottom: 37px;
+  }
+
+.form-control:focus::-webkit-input-placeholder { color:transparent; }
+.form-control:focus:-moz-placeholder { color:transparent; }
+.form-control:focus::-moz-placeholder { color:transparent; }
+.form-control:focus:-ms-input-placeholder { color:transparent; }

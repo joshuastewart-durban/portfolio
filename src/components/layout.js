@@ -10,7 +10,7 @@ import { StaticQuery, graphql } from "gatsby"
 
 import { Container, Row, Col } from "react-bootstrap"
 
-import Header from "./header"
+import ContactForm from "./form"
 import Navbar from "./navBar"
 
 const Layout = ({ children, pageInfo }) => (
@@ -26,20 +26,27 @@ const Layout = ({ children, pageInfo }) => (
     `}
     render={data => (
       <>
-        <Container fluid className="px-0 main py-3">
+        <Container style={{ backgroundColor: "#fcfcfc" }} fluid className="px-0 main py-3">
           <Navbar pageInfo={pageInfo} />
           <Container>
-          <Row>
+            <Row>
+              <Col>
+                <hr style={{ width: "100%" }} />
+              </Col>
+            </Row>
+          </Container>
+          <Row noGutters>
             <Col>
-              <hr style={{ width: "100%" }} />
+              <Container fluid className="mt-5">
+                <main>{children}</main>
+              </Container>
             </Col>
           </Row>
         </Container>
-          <Row noGutters>
-            <Col>
-              <Container className="mt-5">
-                <main>{children}</main>
-              </Container>
+        <Container>
+          <Row>
+            <Col className="pb-3">
+              <ContactForm />
             </Col>
           </Row>
         </Container>
