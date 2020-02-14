@@ -1,24 +1,32 @@
-import React from "react"
-import { Link } from "gatsby"
-import logo from "./../images/JoshuaStewart.png"
-import { Navbar, Nav, Container, Row, Col } from "react-bootstrap"
+import React from "react";
+import { Link } from "gatsby";
+import logo from "./../images/JoshuaStewart.png";
+import { Navbar, Nav, Container, Row, Col } from "react-bootstrap";
 
 const CustomNavbar = ({ pageInfo }) => {
-  console.log(pageInfo)
+  console.log(pageInfo);
   return (
     <>
       <Navbar expand="lg" id="site-navbar">
         <Container>
           <Row style={{ width: "100%" }}>
             <Col>
-              <Navbar.Toggle aria-controls="basic-navbar-nav" />
-              <Navbar.Collapse id="basic-navbar-nav">
-                <Nav
+              <Navbar.Brand href="#home">
+                <img
+                  src={logo}
+                  alt="logo"
+                  style={{ width: "150px" }}
                   className="mr-auto"
                   activeKey={pageInfo && pageInfo.pageName}
-                >
-                  <img src={logo} alt="logo" style={{ width: "150px" }}></img>
-                </Nav>
+                ></img>
+              </Navbar.Brand>
+            </Col>
+            <Col style={{paddingTop: '8px'}}>
+              <Navbar.Toggle
+                aria-controls="basic-navbar-nav"
+                style={{ float: "right" }}
+              />
+              <Navbar.Collapse id="basic-navbar-nav">
                 <Nav
                   className="ml-auto"
                   activeKey={pageInfo && pageInfo.pageName}
@@ -40,7 +48,7 @@ const CustomNavbar = ({ pageInfo }) => {
         </Container>
       </Navbar>
     </>
-  )
-}
+  );
+};
 
-export default CustomNavbar
+export default CustomNavbar;
