@@ -6,3 +6,11 @@
   top: 0;
   z-index: 100;
 }
+
+
+@media only screen and (max-width: 992px) {
+  .navbar-collapse-mobile {
+    margin-top: 50px;
+    margin-right: -60px;
+  }
+}

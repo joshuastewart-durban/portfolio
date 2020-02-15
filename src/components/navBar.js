@@ -21,12 +21,16 @@ const CustomNavbar = ({ pageInfo }) => {
                 ></img>
               </Navbar.Brand>
             </Col>
-            <Col style={{paddingTop: '8px'}}>
+            <Col style={{ paddingTop: "8px" }}>
               <Navbar.Toggle
                 aria-controls="basic-navbar-nav"
                 style={{ float: "right" }}
               />
-              <Navbar.Collapse id="basic-navbar-nav">
+              <Navbar.Collapse
+                id="basic-navbar-nav"
+                style={{float: "right" }}
+                className='navbar-collapse-mobile'
+              >
                 <Nav
                   className="ml-auto"
                   activeKey={pageInfo && pageInfo.pageName}
