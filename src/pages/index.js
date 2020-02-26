@@ -10,7 +10,7 @@ import swiftBand from '../images/swiftBand.png'
 const IndexPage = () => (
   <Layout pageInfo={{ pageName: "index" }}>
     <SEO title="Home" keywords={[`gatsby`, `react`, `bootstrap`]} />
-    <Container fluid className="text-center">
+    <Container fluid className="text-center px-0">
       <Row noGutters>
         <Col className="justify-content-center my-3">
           <h1>
@@ -22,15 +22,15 @@ const IndexPage = () => (
           </h1>
         </Col>
       </Row>
-      <Row className='work-row-padding' style={{ backgroundColor: "white" }} noGutters>
-        <Col>
-        <img src={scratchpatch} alt='Sage Scratch Patch' width="300px"/>
+      <Row className='work-row-padding work-row' style={{ backgroundColor: "#fcfcfc" }} noGutters>
+        <Col className='mb-4' md={6} lg={4}>
+        <img src={scratchpatch} alt='Sage Scratch Patch'/>
         </Col>
-        <Col>
-        <img src={vox} alt='Voxcoal' width="300px"/>
+        <Col className='mb-4' md={6} lg={4}>
+        <img src={vox} alt='Voxcoal'/>
         </Col>
-        <Col>
-        <img src={swiftBand} alt='Swift Band' width="300px"/>
+        <Col className='mb-4' md={6} lg={4}>
+        <img src={swiftBand} alt='Swift Band'/>
         </Col>
       </Row>
     </Container>

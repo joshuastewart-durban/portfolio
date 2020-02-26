@@ -26,7 +26,7 @@ const Layout = ({ children, pageInfo }) => (
     `}
     render={data => (
       <>
-        <Container style={{ backgroundColor: "#fcfcfc" }} fluid className="main py-3">
+        <Container fluid className="px-0 main py-3">
           <Navbar pageInfo={pageInfo} />
           <Container>
             <Row>
@@ -37,7 +37,7 @@ const Layout = ({ children, pageInfo }) => (
           </Container>
           <Row noGutters>
             <Col>
-              <Container fluid className="mt-5">
+              <Container fluid className="mt-5 px-0">
                 <main>{children}</main>
               </Container>
             </Col>

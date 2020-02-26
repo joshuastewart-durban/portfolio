@@ -1,16 +1,33 @@
 .form-control {
-	outline: none;
-	border: none;
+  outline: none;
+  border: none;
+  padding: 0;
 }
 
 .wrap-input {
-    width: 100%;
-    position: relative;
-    border-bottom: 2px solid black;
-    margin-bottom: 37px;
-  }
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid #54595f;
+  margin-bottom: 37px;
+}
 
-.form-control:focus::-webkit-input-placeholder { color:transparent; }
-.form-control:focus:-moz-placeholder { color:transparent; }
-.form-control:focus::-moz-placeholder { color:transparent; }
-.form-control:focus:-ms-input-placeholder { color:transparent; }
+.form-control:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+.form-control:focus:-moz-placeholder {
+  color: transparent;
+}
+.form-control:focus::-moz-placeholder {
+  color: transparent;
+}
+.form-control:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.contact-form {
+  width: 75%;
+  input:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
