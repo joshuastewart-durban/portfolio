@@ -11,7 +11,7 @@ const CustomNavbar = ({ pageInfo }) => {
         <Container>
           <Row style={{ width: "100%" }}>
             <Col>
-              <Navbar.Brand href="#home">
+              <Navbar.Brand href="/">
                 <img
                   src={logo}
                   alt="logo"
