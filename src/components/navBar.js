@@ -40,7 +40,7 @@ const CustomNavbar = ({ pageInfo }) => {
                       Projects
                     </Nav.Link>
                   </Link>
-                  <Link to="/" className="link-no-style">
+                  <Link to="/contact-page" className="link-no-style">
                     <Nav.Link as="span" eventKey="contact">
                       Contact
                     </Nav.Link>

@@ -1,9 +1,16 @@
+$color-accent: #ff6f61;
 div.main {
   padding-bottom: 60px;
 }
 
 div.full-height {
   min-height: 100vh;
+}
+
+.navbar-light .navbar-nav .nav-link{
+  &:hover{
+    color: $color-accent !important;
+  }
 }
 
 a.link-no-style {
@@ -28,7 +35,7 @@ a.link-no-style {
     padding-top: 50px;
     .fa-2x {
       &:hover {
-        color: #ff6f61 !important;
+        color: $color-accent !important;
       }
     }
   }

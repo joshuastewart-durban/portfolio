@@ -1,7 +1,7 @@
 import React from "react"
 import { Form, Button } from "react-bootstrap"
 
-const ContactForm = ({ siteTitle }) => (
+const ContactForm = ({ styleOption }) => (
   <div>
     <Form className='contact-form mx-auto'>
       <Form.Group className='wrap-input' controlId="formBasic">
@@ -21,7 +21,7 @@ const ContactForm = ({ siteTitle }) => (
           placeholder="Enter enquiry"
         />
       </Form.Group>
-      <Button className='submit-button' type="submit">
+      <Button style={{float: 'left'}} className='submit-button' type="submit">
         Submit
       </Button>
     </Form>
