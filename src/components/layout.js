@@ -104,7 +104,7 @@ const Layout = ({ children, pageInfo }) => (
                     </a>
                   </Col>
                 </Row>
-                <Row className='mx-auto'>
+                {/* <Row className='mx-auto'>
                   <Col>
                     <span>
                       © {new Date().getFullYear()}, Built by
@@ -112,7 +112,7 @@ const Layout = ({ children, pageInfo }) => (
                       <a href="">Joshua Stewart</a>
                     </span>
                   </Col>
-                </Row>
+                </Row> */}
               </footer>
             </Col>
           </Row>

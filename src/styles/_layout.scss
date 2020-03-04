@@ -24,7 +24,12 @@ a.link-no-style {
   .bold {
     font-weight: 800;
   }
-  .social-icons{
+  .social-icons {
     padding-top: 50px;
+    .fa-2x {
+      &:hover {
+        color: #ff6f61 !important;
+      }
+    }
   }
 }
