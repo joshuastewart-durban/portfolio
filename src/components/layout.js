@@ -5,13 +5,18 @@
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
 
-import React from "react"
-import { StaticQuery, graphql } from "gatsby"
+import React from "react";
+import { StaticQuery, graphql } from "gatsby";
 
-import { Container, Row, Col } from "react-bootstrap"
+import { Container, Row, Col } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebookF,
+  faInstagram,
+  faLinkedin
+} from "@fortawesome/free-brands-svg-icons";
 
-import ContactForm from "./form"
-import Navbar from "./navBar"
+import Navbar from "./navBar";
 
 const Layout = ({ children, pageInfo }) => (
   <StaticQuery
@@ -43,22 +48,71 @@ const Layout = ({ children, pageInfo }) => (
             </Col>
           </Row>
         </Container>
-        <Container>
-          <Row>
-            <Col className="pb-3">
-              <ContactForm />
-            </Col>
-          </Row>
-        </Container>
         <Container fluid className="px-0">
           <Row noGutters>
             <Col className="footer-col">
               <footer>
-                <span>
-                  © {new Date().getFullYear()}, Built with
-                  {` `}
-                  <a href="https://www.gatsbyjs.org">Gatsby</a>
-                </span>
+                <Row className="footer-body mx-auto ">
+                  <Col md={6} lg={3}>
+                    <h2 className="bold">About me</h2>
+                    <p>Software Developer</p>
+                  </Col>
+                  <Col md={6} lg={3}>
+                    <h2 className="bold">CONTACT ME</h2>
+                    <p>info@joshuastewart.design</p>
+                  </Col>
+                  <Col md={6} lg={3}>
+                    <h2 className="bold">ADDRESS</h2>
+                    <p>Durban, South Africa</p>
+                  </Col>
+                  <Col md={6} lg={3} className="social-icons">
+                    <a
+                      href="https://www.instagram.com/jlushjlush/"
+                      className="px-2"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FontAwesomeIcon
+                        icon={faInstagram}
+                        size="2x"
+                        style={{ color: "#54595f" }}
+                      />
+                    </a>
+                    <a
+                      href="https://www.facebook.com/jlushjlush"
+                      className="px-2"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FontAwesomeIcon
+                        icon={faFacebookF}
+                        size="2x"
+                        style={{ color: "#54595f" }}
+                      />
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/joshua-stewart-9248b5116/"
+                      className="px-2"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FontAwesomeIcon
+                        icon={faLinkedin}
+                        size="2x"
+                        style={{ color: "#54595f" }}
+                      />
+                    </a>
+                  </Col>
+                </Row>
+                <Row className='mx-auto'>
+                  <Col>
+                    <span>
+                      © {new Date().getFullYear()}, Built by
+                      {` `}
+                      <a href="">Joshua Stewart</a>
+                    </span>
+                  </Col>
+                </Row>
               </footer>
             </Col>
           </Row>
@@ -66,6 +120,6 @@ const Layout = ({ children, pageInfo }) => (
       </>
     )}
   />
-)
+);
 
-export default Layout
+export default Layout;

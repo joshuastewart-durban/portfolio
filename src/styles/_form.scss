@@ -31,3 +31,24 @@
     box-shadow: none;
   }
 }
+
+.submit-button {
+  color: #54595f;
+  transition: all 0.6s ease 0s;
+  background: rgba(0, 0, 0, 0);
+  font-family: "Dosis", Sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  border-style: solid;
+  border-width: 2px 2px 2px 2px;
+  border-color: #c1c1c1;
+}
+
+.submit-button:hover {
+  color: black;
+  border-style: solid;
+  border-width: 2px 2px 2px 2px;
+  border-color: black;
+  background-color: transparent;
+}

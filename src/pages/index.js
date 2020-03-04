@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 import scratchpatch from '../images/scratchPatch.png'
 import vox from '../images/voxcoal.png'
 import swiftBand from '../images/swiftBand.png'
+import ContactForm from "../components/form"
 
 const IndexPage = () => (
   <Layout pageInfo={{ pageName: "index" }}>
@@ -34,6 +35,14 @@ const IndexPage = () => (
         </Col>
       </Row>
     </Container>
+    <Container>
+          <Row>
+            <Col className="contact-us">
+              <h2 className='text-center'>Contact us</h2>
+              <ContactForm />
+            </Col>
+          </Row>
+        </Container>
   </Layout>
 )
 

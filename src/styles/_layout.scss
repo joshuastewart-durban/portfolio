@@ -1,5 +1,4 @@
 div.main {
-  min-height: 100vh;
   padding-bottom: 60px;
 }
 
@@ -13,26 +12,19 @@ a.link-no-style {
   }
 }
 
-.footer-col {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-  footer {
-    display: flex;
-    position: relative;
-    bottom: 0;
-    // margin-top: -60px;
-    height: 60px;
-    clear: both;
-    background-color: $color-primary;
-    color: white;
-    justify-content: center;
-    width: 100%;
-
-    span {
-      align-self: center;
-      text-align: center;
-    }
+.footer-body {
+  h2 {
+    color: black;
+    font-family: "Dosis", sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    line-height: 30px;
+    padding-top: 3rem;
+  }
+  .bold {
+    font-weight: 800;
+  }
+  .social-icons{
+    padding-top: 50px;
   }
 }

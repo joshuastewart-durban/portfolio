@@ -2,9 +2,8 @@ import React from "react"
 import { Form, Button } from "react-bootstrap"
 
 const ContactForm = ({ siteTitle }) => (
-  <div className='justify-content-center'>
-    <h2>Contact us</h2>
-    <Form className='contact-form'>
+  <div>
+    <Form className='contact-form mx-auto'>
       <Form.Group className='wrap-input' controlId="formBasic">
         <Form.Control className="input" type="text" placeholder="Name" />
       </Form.Group>
@@ -22,7 +21,7 @@ const ContactForm = ({ siteTitle }) => (
           placeholder="Enter enquiry"
         />
       </Form.Group>
-      <Button variant="primary" type="submit">
+      <Button className='submit-button' type="submit">
         Submit
       </Button>
     </Form>
