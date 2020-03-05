@@ -1,34 +1,40 @@
-.contact-page{
-    padding-bottom: 5rem;
-    width: 75%;
-    .elementor-divider-separator {
-        border-top: 3px solid #ff6f61;
-        width: 60px;
-        margin: 0 auto;
-        display: inline-block;
-      }
-      
-      .element-divider {
-        text-align: center;
-        padding-top: 5px;
-        padding-bottom: 5px;
-      }
-      
-      p {
-        color: #54595f;
-      }
+.contact-page {
+  padding-bottom: 5rem;
+  width: 75%;
+  .elementor-divider-separator {
+    border-top: 3px solid #ff6f61;
+    width: 60px;
+    margin: 0 auto;
+    display: inline-block;
+  }
 
-      h2 {
-        color: black;
-        font-family: "Dosis", sans-serif;
-        font-size: 2rem;
-        text-transform: uppercase;
-        line-height: 30px;
-        padding-top: 3rem;
-        font-weight: 800;
-      }
+  .element-divider {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
 
-      .bio{
-          width: 20rem;
-      }
+  p {
+    color: #54595f;
+  }
+
+  h2 {
+    color: black;
+    font-family: "Dosis", sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    line-height: 30px;
+    padding-top: 3rem;
+    font-weight: 800;
+  }
+
+  .bio {
+    width: 20rem;
+  }
+  @media screen and (max-width: 600px) {
+    .bio-column {
+      text-align: center;
+      padding: 50px 0;
+    }
+  }
 }
