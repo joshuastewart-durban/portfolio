@@ -13,7 +13,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookF,
   faInstagram,
-  faLinkedin
+  faLinkedin,
+  faGithub
 } from "@fortawesome/free-brands-svg-icons";
 
 import Navbar from "./navBar";
@@ -98,6 +99,18 @@ const Layout = ({ children, pageInfo }) => (
                     >
                       <FontAwesomeIcon
                         icon={faLinkedin}
+                        size="2x"
+                        style={{ color: "#54595f" }}
+                      />
+                    </a>
+                    <a
+                      href=""
+                      className="px-2"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FontAwesomeIcon
+                        icon={faGithub}
                         size="2x"
                         style={{ color: "#54595f" }}
                       />
