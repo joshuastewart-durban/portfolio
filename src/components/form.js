@@ -1,33 +1,51 @@
-import React from "react"
-import { Form, Button } from "react-bootstrap"
+import React from "react";
 
 const ContactForm = ({ styleOption }) => (
   <div>
-    <Form className='contact-form mx-auto' data-netlify="true" data-netlify-honeypot="bot-field">
-      <Form.Group className='wrap-input' controlId="formBasic">
-        <Form.Control className="input" type="text" placeholder="Name" name="name" />
-      </Form.Group>
-      <Form.Group className='wrap-input' controlId="formBasicEmail">
-        <Form.Control
-          className="input"
-          type="email"
-          placeholder="Enter email"
-          name="email"
-        />
-      </Form.Group>
-      <Form.Group className='wrap-input' controlId="formBasicEnquiry">
-        <Form.Control
-          className="input"
+    <form
+      className="contact-form mx-auto"
+      name="contact"
+      method="post"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
+    >
+      <input type="hidden" name="bot-field" />
+      <input type="hidden" name="form-name" value="contact" />
+      <div className="wrap-input">
+        <input
+          placeholder="Name"
           type="text"
-          placeholder="Enter enquiry"
-          name="message"
+          name="name"
+          id="name"
+          className="input"
         />
-      </Form.Group>
-      <Button style={{float: 'left'}} className='submit-button' type="submit">
-        Submit
-      </Button>
-    </Form>
+      </div>
+      <div className="wrap-input">
+        <input
+          placeholder="Email"
+          type="text"
+          name="email"
+          id="email"
+          className="input"
+        />
+      </div>
+      <div className="wrap-input">
+        <textarea
+          placeholder="Message"
+          name="message"
+          id="message"
+          rows="6"
+          className="input"
+        />
+      </div>
+      <input
+        type="submit"
+        value="Send Message"
+        style={{ float: "left" }}
+        className="submit-button"
+      />
+    </form>
   </div>
-)
+);
 
-export default ContactForm
+export default ContactForm;
