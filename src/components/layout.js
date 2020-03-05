@@ -104,7 +104,7 @@ const Layout = ({ children, pageInfo }) => (
                       />
                     </a>
                     <a
-                      href="https://github.com/"
+                      href="https://github.com/joshuastewart-durban"
                       className="px-2"
                       target="_blank"
                       rel="noopener noreferrer"
