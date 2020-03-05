@@ -3,7 +3,7 @@ import { Form, Button } from "react-bootstrap"
 
 const ContactForm = ({ styleOption }) => (
   <div>
-    <Form action='/success' netlify className='contact-form mx-auto' data-netlify="true" data-netlify-honeypot="bot-field">
+    <Form action='/success' className='contact-form mx-auto' data-netlify="true" data-netlify-honeypot="bot-field">
       <Form.Group className='wrap-input' controlId="formBasic">
         <Form.Control className="input" type="text" placeholder="Name" name="name" />
       </Form.Group>
