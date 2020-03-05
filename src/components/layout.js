@@ -104,7 +104,7 @@ const Layout = ({ children, pageInfo }) => (
                       />
                     </a>
                     <a
-                      href=""
+                      href="https://github.com/"
                       className="px-2"
                       target="_blank"
                       rel="noopener noreferrer"

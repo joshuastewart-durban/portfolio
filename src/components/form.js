@@ -3,6 +3,7 @@ import React from "react";
 const ContactForm = ({ styleOption }) => (
   <div>
     <form
+      action="/success"
       className="contact-form mx-auto"
       name="contact"
       method="post"
