@@ -10,14 +10,16 @@ import { StaticQuery, graphql } from "gatsby";
 
 import { Container, Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { config } from "@fortawesome/fontawesome-svg-core";
 import {
   faFacebookF,
   faInstagram,
   faLinkedin,
   faGithub
 } from "@fortawesome/free-brands-svg-icons";
-
 import Navbar from "./navBar";
+
+config.autoAddCss = false;
 
 const Layout = ({ children, pageInfo }) => (
   <StaticQuery
