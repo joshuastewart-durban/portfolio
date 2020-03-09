@@ -60,7 +60,7 @@ const IndexPage = () => (
     <Container>
       <Row>
         <Col className="contact-us">
-          <h2 className="text-center">Contact us</h2>
+          <h2 className="text-center">Contact Me</h2>
           <ContactForm />
         </Col>
       </Row>
